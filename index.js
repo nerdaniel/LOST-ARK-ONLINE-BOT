@@ -1,15 +1,13 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
-
+const client = new Discord.Client();
 const token = 'NjM1OTIxMjA0OTU5NjQxNjIx.Xa5L0g.E4Obw8m3-LhS4Ub_MC9svv6neRs' ;
-
-const PREFIX = '-';
-
-bot.on('ready', () =>{
+client.on('ready', () =>{
     console.log ('This bot is online!');
+});
+const PREFIX = '-';
 })
 
-bot.on('message', message=>{
+client.on('message', message=>{
      
     let args = message.content.substring(PREFIX.length).split(" ");
 
@@ -30,5 +28,4 @@ bot.on('message', message=>{
             break;
     }
 })
-
-bot.login(token);
+client.login(process.env.BOT_TOKEN);
