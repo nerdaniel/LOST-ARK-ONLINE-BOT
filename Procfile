@@ -1,1 +1,1 @@
-worker: node index.js LOST ARK ONLINE BOT
+worker: node index.js 
