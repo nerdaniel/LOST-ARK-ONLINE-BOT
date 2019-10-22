@@ -4,11 +4,11 @@
   "description": "Lostark",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
+   "dependencies": {
   "author": "Nerdaniel",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "11.5.1"
+      "request": 2.81.0
   }
 }
